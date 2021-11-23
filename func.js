@@ -26,53 +26,53 @@ const takeOrder = (topping1, topping2) => {
 takeOrder("sundried tomato", "buffalo mozzarella");
 
 //activity 3
-// const cashWithdrawal = (amountWanted, pinEntered, accBalance) => {
-//     let pin = 1234;
-//     let accBalance = 250;
-//     let availableNotes = [100, 50, 20, 10, 5];
-//     result = [];
-//     if (amountWanted < accBalance){
-//         console.log("Sorry you do not have enough")
-//     }
-//     if (amountWanted && amountWanted > 0) {
-//         while(amountWanted > 0) {
-//             for (let i = 0; i < availableNotes.length; i++){
-//                 let note = availableNotes[i];
-//                 if (amountWanted - note >= 0) {
-//                     amountWanted -= note;
-//                     result.push(note);
-//                     break;
-//                 } else if ( i === availableNotes.length - 1 && amountWanted > 0) {
-//                     console.log("Sorry this machine does not have enough cash available");
-//                 }
-//             }
-//         } 
-//     } else if (amountWanted <= 0) {
-//         console.log("Sorry that amount is too low")
-//     }
-//     return result;
-// }
-// console.log(cashWithdrawal(200))
+const cashWithdrawal = (amountWanted, pinEntered, accBalance) => {
+    let pin = 1234;
+    let accBalance = 250;
+    let availableNotes = [100, 50, 20, 10, 5];
+    result = [];
+    if (amountWanted < accBalance){
+        console.log("Sorry you do not have enough")
+    }
+    if (amountWanted && amountWanted > 0) {
+        while(amountWanted > 0) {
+            for (let i = 0; i < availableNotes.length; i++){
+                let note = availableNotes[i];
+                if (amountWanted - note >= 0) {
+                    amountWanted -= note;
+                    result.push(note);
+                    break;
+                } else if ( i === availableNotes.length - 1 && amountWanted > 0) {
+                    console.log("Sorry this machine does not have enough cash available");
+                }
+            }
+        } 
+    } else if (amountWanted <= 0) {
+        console.log("Sorry that amount is too low")
+    }
+    return result;
+}
+console.log(cashWithdrawal(200))
 
-// let pin = 1234
-// const pinCheck = () => {
-//     let userInput 
-//     userInput = prompt("Please enter you pin: ")
-//     if (userInput == pin) {
-//         console.log("Correct pin, please hold");
-//     } else {
-//         console.log("Incorrect pin, please try again")
-//         pinCheck()
-//     }
-// }
-// let accBalance = 250
-// const cashWithdrawal = () => {
-//     userInput = prompt("How much would you like to withdraw: ")
-//     if (userInput <= accBalance);
-//     accBalance - userInput
-//     console.log(`Please take your cash, your new balance is ${accBalance}`)
-// }
-// cashWithdrawal()
+let pin = 1234
+const pinCheck = () => {
+    let userInput 
+    userInput = prompt("Please enter you pin: ")
+    if (userInput == pin) {
+        console.log("Correct pin, please hold");
+    } else {
+        console.log("Incorrect pin, please try again")
+        pinCheck()
+    }
+}
+let accBalance = 250
+const cashWithdrawal = () => {
+    userInput = prompt("How much would you like to withdraw: ")
+    if (userInput <= accBalance);
+    accBalance - userInput
+    console.log(`Please take your cash, your new balance is ${accBalance}`)
+}
+cashWithdrawal()
 
 ///OBJECTS
 
@@ -143,7 +143,7 @@ person.favSongs = ["Rose Golden","SPELL","FVN!","MHM"]
 console.log(person.favSongs[2]) 
 
 
-//activity 2
+//
 const pet = {
     name: "Abraham",
     typeOfPet: "cat",
@@ -161,5 +161,39 @@ const pet = {
 console.log(pet.eating());
 console.log(pet.drinking())
 
+coffeeShop = {
+    branch: [
+        "Liverpool",
+        "London",
+        "Manchester",
+        "Leeds"
+    ],
+    drinksAndPrices= {
+        hotDrinks: {
+            espresso: 2.20,
+            americano: 2.80,
+            cortado: 3.00,
+            cappuccino: 3.00,
+            latte: 3.00,
+            mocha: 3.50,
+            tea: 2.80 
+        },
+        coldDrinks= {
+            icedCoffee: 3.50,
+            icedTea: 3.00,
+            freshOrange: 2.50,
+            kombucha: 3.50,
+            water: 2.00
+        },
+    },
+    foodAndPrices= {
+        fry: 10.00,
+        veggieFry: 9.00,
+        tunaMelt: 5.00,
+        caesarSalad: 5.00,
+        spaghettiBolognese: 9.00,
+        
 
+    }
+};
 

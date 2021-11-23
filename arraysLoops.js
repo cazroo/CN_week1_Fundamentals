@@ -19,6 +19,7 @@ console.log(coffeeOrder)
 //remove the last item from array
 coffeeOrder.pop();
 
+//
 let cards = ["Diamond", "Spade", "Heart", "Club"];
 let currentCard = "Club";
 while(currentCard != "Spade"){
@@ -27,7 +28,7 @@ while(currentCard != "Spade"){
 }
 console.log(currentCard)
 
-//activity 1 
+//loop to cylce through array
 let favFilms = [
     "Big Fish",
     "A Clockwork Orange",
@@ -42,7 +43,7 @@ while (currentFilm != "A Clockwork Orange"){
 }
 console.log(currentFilm)
 
-//activity 2
+//6 random numbers between 1-50
 function ranNums(){
     for (let i = 0; i < 6; i++){
         console.log(Math.floor(Math.random()*50))+1;
@@ -50,14 +51,17 @@ function ranNums(){
 }
 ranNums()
 
-//activity 3
+//count up to 9
 let i = 0 
 while (i < 10){
     console.log(i);
     i++;
 }
+//count down from 9
+for (let i = 9; i>=0; i--){
+console.log(i)}
 
-//activity 4
+//check if 3rd movie is ghostbusters 
 favFilms.slice(-2)
 for(let i = 0; i < favFilms.length; i++){
     console.log(favFilms[i]);
@@ -69,8 +73,18 @@ else {
     console.log("Boo! We want Ghostbusters!")
 }
 
-//activity 5
+// //ran num generator that checks if ran num is divisible by 7
+let num = Math.floor(Math.random() * 30)
+for (let i = 0; i < 6; i++){
+  console.log(num)};
+  if (num % 7 == 0);
+  {console.log(` ----- ${num} is divisble by 7!`)};
+  num = Math.floor(Math.random() * 30)
 
-
-//activity 6
-
+// //compares followers list using nested loop 
+let bobsFollowers = ['Ben', 'Annie', 'Dan', 'Chris'];
+let hannahsFollowers = ['Annie', 'Chris', 'Dan', 'Ben'];
+for (let i = 0; i < bobsFollowers.length; i++){
+  for (let j = 0; j < hannahsFollowers.length; j++);
+    if (bobsFollowers[i] === hannahsFollowers[i]);
+    {console.log(`${bobsFollowers[i]} is in both arrays!`)}}

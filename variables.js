@@ -30,6 +30,18 @@ console.log(`Tomorrow I will eat ${breakfast}, ${lunch} and ${dinner}`)
 
 //days until birthday calculator
 //
+var days = 0;
+var difference = 0;
+
+birthday = new Date("December 29, 2021");
+
+today = new Date();
+
+difference = birthday - today;
+
+days = Math.round(difference/(1000*60*60*24));
+console.log(days)
+
 
 //if statements 
 let weather = "raining";
@@ -99,15 +111,16 @@ else {
     console.log(`Sorry, I can't serve you`)
 }
 
-let pizzaTopping = "salami"
-switch(pizzaTopping){
-case "onion":
-case "mushroom":
-    console.log("The best vegetables on pizza");
-    break;
-    case "pork sausage":
-        console.log("GET THAT AWAY FROM MY PIZZA NOW");
-        break;
-        case "chicken":
-        case "pepperoni":
-        case ""
+// let pizzaTopping = "salami"
+// switch(pizzaTopping){
+// case "onion":
+// case "mushroom":
+//     console.log("The best vegetables on pizza");
+//     break;
+//     case "pork sausage":
+//         console.log("GET THAT AWAY FROM MY PIZZA NOW");
+//         break;
+//         case "chicken":
+//         case "pepperoni":
+//         case ""
+
