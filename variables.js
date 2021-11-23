@@ -6,7 +6,6 @@
 
 //operating operators in code:
 //** means multiplied to the power of a number
-//% moduli
 
 //assignment operators in code:
 //= assigns value
@@ -42,6 +41,36 @@ difference = birthday - today;
 days = Math.round(difference/(1000*60*60*24));
 console.log(days)
 
+//x and o grid layout
+horiz = `-----------------`
+vert = `     |     |       `
+grid = [
+  `X`,
+  `O`,
+  'X',
+  ' ',
+  ' ',
+  'X',
+  ' ',
+  `O`,
+  `X`
+]
+
+console.log(
+  `
+${vert}  
+  ${grid[0]}  |  ${grid[1]}  |  ${grid[2]}  
+${vert}    
+${horiz}
+${vert}  
+  ${grid[3]}  |  ${grid[4]}  |  ${grid[5]}    
+${vert}  
+${horiz}
+${vert}  
+  ${grid[6]}  |  ${grid[7]}  |  ${grid[8]}  
+${vert}  
+  `
+);
 
 //if statements 
 let weather = "raining";
@@ -111,16 +140,101 @@ else {
     console.log(`Sorry, I can't serve you`)
 }
 
-// let pizzaTopping = "salami"
-// switch(pizzaTopping){
-// case "onion":
-// case "mushroom":
-//     console.log("The best vegetables on pizza");
-//     break;
-//     case "pork sausage":
-//         console.log("GET THAT AWAY FROM MY PIZZA NOW");
-//         break;
-//         case "chicken":
-//         case "pepperoni":
-//         case ""
+//switch pizza topping
+const topping = `salami`;
+const favourites = [`cheese`, `tomato sauce`, `pepperoni`];
+const excluded = [`ham`];
 
+switch(true) {
+  case favourites.indexOf(topping) >= 0:
+    console.log(`${topping} is a classic for a reason`)
+      break;
+  case excluded.indexOf(topping) >= 0:
+    console.log(` ${topping} on pizza is gross and i will vomit`)
+      break;
+  default:
+    console.log(`i have no opinion on ${topping}`)
+      break;
+};
+
+//
+let password = `Caroline123`
+const num = 30
+
+if (password.length <= 8) {
+  console.log(`the password is too short, try again.`)
+} else {
+  console.log(`password is ${password}`)
+};     
+if (num % 3 == 0 || num % 5 == 0) {
+  console.log(`number is divisible by 3 or 5`)
+} else {
+  console.log(`number is not divisible by 3 or 5`)
+};
+
+//
+let Num = 40;
+let output = ``
+switch(true) {
+  case Num % 3 == 0 && num % 5 == 0:
+    output = `fizzbuzz`;
+      break;
+  case Num % 3 == 0:
+    output = `fizz`;
+      break;
+  case Num % 5 == 0:
+    output = `buzz`;
+      break;
+  default:
+    output = Num
+}
+console.log(output);
+
+//
+let time = 1000;
+let placeOfWork = "city centre";
+let townOfHome = "Liverpool";
+switch(true) {
+    case time < 0700 || time >= 1700:
+        console.log(`i am currently home in ${townOfHome}`)
+        break;
+    case time >= 0700 && time < 1700:
+        console.log(`i am working in ${placeOfWork}`)
+        break;
+};
+
+//
+let str = "kajhcoischoancoajcpoakcpaoalai";
+const vowels = [
+    "a",
+    "e",
+    "i",
+    "o",
+    "u"
+];
+let n = -1;
+let strIndex;
+for (i in vowels) {
+    strIndex=str.length-str.split(``).reverse().indexOf(vowels[i])
+    if (strIndex > n){
+        n = strIndex
+    }
+};
+console.log(n)
+
+//
+let word = "echo";
+if (word.split(``)[0] == word.split(``).reverse()[0]) {
+    console.log(`first letter of ${word} matches last`)
+} else {
+    console.log(`first letter of ${word} does not match last`)
+};
+
+//
+let number1 = 66;
+let number2 = 929;
+if ((number1 + number2) % 2 == 0) {
+    console.log(`${number1} + ${number2} = ${number1 + number2}`)
+} else {
+    console.log(`${number1} * ${number2} = ${number1 * number2}`)
+};

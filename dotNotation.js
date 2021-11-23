@@ -36,15 +36,15 @@ var row = `-----------`;
 console.log(`${col}\n${row}\n${col}\n${row}\n${col}`);
 
 //make grid with loop function
-function matr(){
+function grid(){
     for (let i = 0; i < 4; i++) {
         console.log("  |     |");}
               };
-      matr()
+      grid()
       console.log("-----------");
-      matr()
+      grid()
       console.log("-----------");
-      matr()
+      grid()
 
 //grid with nested loop
 //this will loop code between here and * 3 times

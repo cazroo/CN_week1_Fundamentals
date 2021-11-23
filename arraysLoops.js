@@ -82,9 +82,20 @@ for (let i = 0; i < 6; i++){
   num = Math.floor(Math.random() * 30)
 
 // //compares followers list using nested loop 
-let bobsFollowers = ['Ben', 'Annie', 'Dan', 'Chris'];
-let hannahsFollowers = ['Annie', 'Chris', 'Dan', 'Ben'];
-for (let i = 0; i < bobsFollowers.length; i++){
-  for (let j = 0; j < hannahsFollowers.length; j++);
-    if (bobsFollowers[i] === hannahsFollowers[i]);
-    {console.log(`${bobsFollowers[i]} is in both arrays!`)}}
+let bobsFollowers = [
+    "Caz",
+    "Jack",
+    "Annie",
+    "Billy"
+];
+let hannahsFollowers = [
+    "Dan",
+    "Caz",
+    "Emma",
+    "Annie"
+];
+for (i in bobsFollowers) {
+    if (hannahsFollowers.indexOf(bobsFollowers[i]) > -1) {
+        console.log(`${bobsFollowers[i]} is a follower of both bob and hannah`)
+    }
+};
